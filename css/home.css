@@ -1,0 +1,409 @@
+
+
+@font-face {
+	font-family: roboto-regular;
+	src: url(../inc/Roboto-Regular.ttf);
+}
+
+@font-face {
+	font-family: roboto-black;
+	src: url(../inc/Roboto-Black.ttf);
+}
+
+.main {
+	top:0;
+	width: 100%;
+	height: 100vh;
+	background-image: url("../img/banner.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	object-fit: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.welcome {
+	margin: 0 auto;
+	width: 80%;
+	height: 20vh;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+	color: white;
+}
+
+.welcome h1 {
+	font-size: 500%;
+	font-weight: 900;
+	font-family: roboto-black;
+	letter-spacing: 5px;
+	text-shadow: 2px 2px 24px #000;
+}
+
+.welcome h2 {
+	font-size: 250%;
+	font-weight: bolder;
+	font-family: roboto-black;
+	letter-spacing: 5px;
+	text-shadow: 1px 1px 33px #000;
+}
+
+.welcome p {
+	font-size: 100%;
+	margin: 20px 0;
+	line-height: 1.5;
+	font-weight: bold;
+	font-family: roboto-regular;
+	letter-spacing: 2px;
+	text-shadow: 2px 2px 22px #000;
+}
+
+.welcome a {
+	font-size: 100%;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	margin-top: 20px;
+	line-height: 1.5;
+	font-weight: bold;
+	font-family: roboto-regular;
+	letter-spacing: 2px;
+	text-shadow: 2px 2px 22px #000;
+}
+
+.services {
+	width: 70%;
+	margin: 50px auto;
+}
+.services h1 {
+	text-align: center;
+	font-size: 150%;
+	letter-spacing: 2px;
+	text-decoration: underline;
+}
+.services p {
+	margin: 50px 0;
+	font-size: 120%;
+	line-height: 1.5;
+}
+.services ul {
+	width: 80%;
+	margin: 0 auto;
+	list-style-position: outside;
+}
+.services ul li:nth-child(1) {
+	list-style-image: url("../img/place.png");
+}
+.services ul li:nth-child(2) {
+	list-style-image: url("../img/reviews.png");
+}
+.services ul li:nth-child(3) {
+	list-style-image: url("../img/website.png");
+}
+.services ul li:nth-child(4) {
+	list-style-image: url("../img/news.png");
+}
+.services ul li:nth-child(5) {
+	list-style-image: url("../img/photography.png");
+}
+.services ul li:nth-child(6) {
+	list-style-image: url("../img/game.png");
+}
+.services ul li:nth-child(7) {
+	list-style-image: url("../img/hotel.png");
+}
+.services ul li:nth-child(8) {
+	list-style-image: url("../img/museum.png");
+}
+.services ul li:nth-child(9) {
+	list-style-image: url("../img/update.png");
+}
+.services ul li:nth-child(10) {
+	list-style-image: url("../img/hours.png");
+}
+.services ul li {
+	font-size: 120%;
+	line-height: 2.4;
+	margin-left: 20px;
+}
+
+.about-us {
+   width: 100%;
+   height: 120vh;
+   position: relative;
+   background-color: #fff;
+   background-image: url("../img/about-us-bg.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
+}
+
+.about-us::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+   width: 100%;
+   height: 120vh;
+   background-image: linear-gradient(to right, #feaa00, transparent, transparent);
+   clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
+   z-index: -1;
+}
+
+.about-us-content {
+	width: 50%;
+	height: 100%;
+	float: left;
+	display: flex;
+   flex-direction: column;
+}
+
+.about-us-content h1 {
+	margin: 20% 0 10% 10%;
+	font-size: 150%;
+	text-decoration: underline;
+	letter-spacing: 2px;
+	color: white;
+}
+
+.about-us-content p {
+	margin: 0 0 5% 10%;
+	font-size: 90%;
+	color: white;
+	line-height: 1.5;
+}
+
+.about-us-content a {
+	margin: 0 0 0 10%;
+	font-size: 90%;
+	color: white;
+}
+
+.client-reviews {
+	width: 100%;
+	height: 160vh;
+	overflow: hidden;
+}
+
+.client-reviews h1 {
+	margin: 0 0 5% 10%;
+	font-size: 150%;
+	text-decoration: underline;
+	letter-spacing: 2px;
+}
+
+.reviews-content {
+	width: 90%;
+	margin: 0 auto;
+	height: 90%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.review {
+	width: calc(50% - 2% - 4px);
+	height: calc(20% - 2%);
+	margin: 1%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	border: 2px solid black;
+	border-top-left-radius: 25vw;
+	border-bottom-left-radius: 25vw;
+}
+
+.review img {
+	width: calc(30% - 2%);
+	margin: 1%;
+	border-radius: 50%;
+}
+
+.review .review-data {
+	width: calc(70% - 6%);
+	height: calc(90%);
+	margin: 3%;
+	position: relative;
+}
+
+.review .review-data h2 {
+	font-size: 120%;
+	margin-bottom: 1%;
+}
+
+.review .review-data p {
+	font-size: 80%;
+	line-height: 1.2;
+}
+
+.review .review-data span {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	font-size: 80%;
+}
+
+.newsletter {
+	width: 70%;
+	margin: 10% auto;
+}
+.newsletter form {
+	clear: both;
+	text-align: center;
+}
+.newsletter form input[type="email"] {
+	float: left;
+	border: 3px solid #feaa00;
+	padding: 2%;
+	font-size: 2vw;
+	width: 80%;
+	height: 4vw;
+	margin-bottom: 2%;
+	border-top-left-radius: 40px;
+	border-bottom-left-radius: 40px;
+}
+
+.newsletter form button {
+	float: right;
+	padding: 1%;
+	border: 3px solid #feaa00;
+	background-color: #feaa00;
+	font-size: 2vw;
+	font-weight: bold;
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px;
+	text-transform: uppercase;
+	width: 20%;
+	height: 4vw;
+	margin-bottom: 2%;
+}
+.newsletter form button:hover {
+	cursor: pointer;
+}
+
+.newsletter form span {
+	clear: both;
+	font-size: 90%;
+}
+
+.newsletter form span input[type="checkbox"] {
+	width: 25px;
+	height: 25px;
+	padding: 1%;
+}
+
+@media screen and (max-width: 769px) {
+	.about-us {
+	   height: 140vh;
+	}
+
+	.about-us::after {
+	   height: 140vh;
+	}
+
+	.about-us-content {
+		width: 100%;
+		margin: 0;
+		display: flex;
+	   flex-direction: column;
+	   justify-content: center;
+	}
+}
+
+@media screen and (max-width: 963px) {
+	.welcome h1 {
+		font-size: 250%;
+	}
+
+	.welcome h2 {
+		font-size: 150%;
+	}
+
+	.welcome p {
+		font-size: 80%;
+	}
+
+	.welcome a {
+		font-size: 80%;
+	}
+	.services {
+		width: 70%;
+		margin: 50px auto 50px calc(10% + 80px);
+	}
+	.services h1 {
+		font-size: 120%;
+		letter-spacing: 1px;
+		text-decoration: none;
+	}
+	.services p {
+		margin: 50px 0;
+		font-size: 90%;
+		line-height: 1.5;
+	}
+	.newsletter form input[type="email"] {
+		font-size: 2vw;
+	}
+	.newsletter form span {
+		font-size: 2vw;
+	}
+}
+
+@media screen and (max-width: 1016px) {
+	.welcome {
+		width: 80%;
+		margin: 0 auto 0 30px;
+		text-align: center;
+	}
+	.about-us-content h1 {
+		margin: 20% 0 10% calc(10% + 80px);
+	}
+	.about-us-content p {
+		margin: 0 0 5% calc(10% + 80px);
+	}
+	.about-us-content a {
+		margin: 0 0 0 calc(10% + 80px);
+	}
+	.client-reviews {
+		width: calc(100% - 80px);
+		margin-left: 80px;
+		height: 270vh;
+	}
+	.reviews-content {
+		width: 90%;
+		margin: 0 auto;
+		flex-direction: column;
+	}
+	.review {
+		width: calc(100% - 2% - 4px);
+		height: calc(12% - 2%);
+		margin: 1%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: center;
+		border: 2px solid black;
+		border-radius: 10px;
+		border-top-left-radius: 90vw;
+		border-bottom-left-radius: 90vw;
+	}
+	.review img {
+		width: calc(20% - 2%);
+	}
+
+	.review .review-data {
+		width: calc(80% - 6%);
+		height: calc(90%);
+	}
+	.newsletter {
+		width: 70%;
+		margin: 0 0 10% calc(10% + 80px);
+	}
+}
